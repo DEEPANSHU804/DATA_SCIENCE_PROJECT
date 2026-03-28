@@ -13,7 +13,7 @@ class DataTransformationTrainingPipeline:
 
     def initiate_data_transformation(self):
 
-        try:
+        try:   
             with open(Path("artifacts/data_validation/status.txt"),'r') as f:
                 status=f.read().split(" ")[-1]
             if status=="True":
